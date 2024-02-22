@@ -1,0 +1,83 @@
+body{
+  background-image:linear-gradient(110deg,rgb(141, 252, 141),rgb(148, 236, 207),rgb(157, 157, 248)) ;
+  text-align: center;
+ 
+}
+header{
+  margin: 30px;
+  padding:10px;
+  font-size: 35px;
+  font-weight: 900;
+}
+input{
+  background-color: white;
+  padding:7px 50px;
+  border-radius: 8px;
+  color: black;
+}
+button{
+  margin: 10px;
+  padding:7px 8px;
+  background-color: lightgreen;
+  color: brown;
+  font-weight: 900;
+  border-radius: 8px;
+  border: 2px solid rgb(84, 207, 84);
+  
+}
+select{
+  padding: 7px;
+  background-color: rgb(169, 240, 216);
+  
+}
+.topdiv{
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+ul{
+  list-style: none;
+  
+  
+  min-width: 30%;
+  
+  
+}
+.todoli{
+  font-size: 20px;
+  flex: 1;
+  justify-content: space-between;
+  margin:0.8rem;
+}
+.tododiv{
+margin-bottom: 8px;
+  display: flex;
+  background: white;
+  border-radius: 8px;
+text-align: start;
+}
+.donebutton,.trashbutton,.edited{
+  margin: 0px;
+  padding:12px;
+  border-radius: 0px;
+  border: 0px;
+}
+.donebutton{
+  background-color: lightgreen;
+}
+.trashbutton{
+  background-color: rgb(225, 149, 87);
+}
+.edited{
+  background-color: rgb(172, 172, 237);
+}
+.red{
+  text-decoration: line-through;
+  background-color: lightgreen;
+  margin:0px;
+  padding:0.8rem;
+ justify-content: space-around;
+}
