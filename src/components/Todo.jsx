@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
+
 function Todo({todos,todo,setTodo}){
    
 function deletebutton(){ 
@@ -28,4 +30,10 @@ function checking(){
         </div>
     )
 }
+Todo.propTypes = {
+    todos: PropTypes.array.isRequired,
+    todo: PropTypes.object.isRequired,
+    setTodo: PropTypes.func.isRequired,
+    update: PropTypes.func.isRequired,
+  };
 export default Todo;

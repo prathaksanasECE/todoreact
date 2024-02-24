@@ -1,6 +1,8 @@
 import React from 'react'
 import Todo from './Todo'
 
+import PropTypes from 'prop-types';
+
 function TodoList({todo ,setTodo,update}) {
   return (
     
@@ -19,5 +21,10 @@ function TodoList({todo ,setTodo,update}) {
     </div>
   )
 }
+TodoList.propTypes = {
+  todo: PropTypes.object.isRequired,
+  setTodo: PropTypes.func.isRequired,
+  update: PropTypes.func.isRequired,
+};
 
 export default TodoList

@@ -1,4 +1,5 @@
-import React from 'react'
+import React  from 'react';
+import PropTypes from 'prop-types';
 
 function Form({setI,todo,setTodo,inputext,setAll}) {
 
@@ -28,5 +29,11 @@ function Form({setI,todo,setTodo,inputext,setAll}) {
     </form>
   )
 }
-
+Form.propTypes = {
+  setI: PropTypes.func.isRequired,
+  todo: PropTypes.object.isRequired,
+  setTodo: PropTypes.func.isRequired,
+  inputext: PropTypes.string.isRequired,
+  setAll: PropTypes.func.isRequired,
+};
 export default Form
